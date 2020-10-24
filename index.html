@@ -26,7 +26,7 @@
     <!--.....................................................................................................-->
 
     <!--module1-->
-
+<a href="assets/pdf/Computer syllabus PCA 2020.pdf" class="btn btn-success mt-2">Download Syllabus of Computer Application</a>
     <div class="card contents" data-city="module1">
       <h2><i class="fa fa-bookmark-o" style="font-size:36px"></i> Module 1</h2>
       <p>Last Updated : 24 Oct 2020</p>
@@ -251,7 +251,71 @@
           Relations can be normalized.<br>
           In normalized relations, values saved are atomic values.<br>
           Each row in a relation contains a unique value.<br>
-          Each column in a relation contains values from a same domain.<br>
+          Each column in a relation contains values from a same domain.<br><br>
+
+
+          <b class="red">DATABASE SCHEMA </b><br><br>
+          A database schema is the skeleton structure that represents the logical view of the entire database. It
+          defines how the data is organized and how the relations among them are associated. It formulates all the
+          constraints that are to be applied on the data.<br>
+
+          A database schema defines its entities and the relationship among them. It contains a descriptive detail of
+          the database, which can be depicted by means of schema diagrams. It’s the database designers who design the
+          schema to help programmers understand the database and make it useful.<br><br>
+
+          <img src="assets/images/dbms_schemas.png" class="img-fluid rounded mx-auto d-block"><br><br>
+
+
+          A database schema can be divided broadly into two categories <br><br>
+
+          <b>1.Physical Database Schema </b><br> This schema pertains to the actual storage of data and its form of
+          storage like
+          files, indices, etc. It defines how the data will be stored in a secondary storage.<br>
+
+          <b>2.Logical Database Schema </b><br> This schema defines all the logical constraints that need to be applied
+          on the data
+          stored. It defines tables, views, and integrity constraints.<br><br>
+
+          <b class="blue">Database Instance</b><br>
+          It is important that we distinguish these two terms individually. Database schema is the skeleton of database.
+          It is designed when the database doesn't exist at all. Once the database is operational, it is very difficult
+          to make any changes to it. A database schema does not contain any data or information.<br>
+
+          A database instance is a state of operational database with data at any given time. It contains a snapshot of
+          the database. Database instances tend to change with time. A DBMS ensures that its every instance (state) is
+          in a valid state, by diligently following all the validations, constraints, and conditions that the database
+          designers have imposed.<br><br>
+
+          <b class="red">DATA INDEPENDANCE</b><br><br>
+          If a database system is not multi-layered, then it becomes difficult to make any changes in the database
+          system. Database systems are designed in multi-layers as we learnt earlier<br>
+          A database system normally contains a lot of data in addition to users’ data. For example, it stores data
+          about data, known as metadata, to locate and retrieve data easily. It is rather difficult to modify or update
+          a set of metadata once it is stored in the database. But as a DBMS expands, it needs to change over time to
+          satisfy the requirements of the users. If the entire data is dependent, it would become a tedious and highly
+          complex job<br><br>
+
+
+          <img src="assets/images/data_independence.png" class="img-fluid rounded mx-auto d-block"><br><br>
+
+          Metadata itself follows a layered architecture, so that when we change data at one layer, it does not affect
+          the data at another level. This data is independent but mapped to each other.<br><br>
+
+          <b>1.Logical Data Independence</b><br>
+          Logical data is data about database, that is, it stores information about how data is managed inside. For
+          example, a table (relation) stored in the database and all its constraints, applied on that relation.<br>
+
+          Logical data independence is a kind of mechanism, which liberalizes itself from actual data stored on the
+          disk. If we do some changes on table format, it should not change the data residing on the disk.<br><br>
+
+          <b>2.Physical Data Independence</b><br>
+          All the schemas are logical, and the actual data is stored in bit format on the disk. Physical data
+          independence is the power to change the physical data without impacting the schema or logical data.<br>
+
+          For example, in case we want to change or upgrade the storage system itself − suppose we want to replace
+          hard-disks with SSD − it should not have any impact on the logical data or schemas.<br>
+
+
 
           <br>
           <a
