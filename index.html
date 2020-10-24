@@ -24,32 +24,112 @@
   </header>
   <div class="container">
     <!--.....................................................................................................-->
-    
-<!--module1-->
 
-<div class="card contents" data-city="buda">
-  <h2><i class="fa fa-bookmark-o" style="font-size:36px"></i> Module 1</h2>
-  <p>Last Updated : 24 Oct 2020</p>
-  <p><b>HISTORY of DBMS </b></p>
-  <p>
-    Data is a collection of facts and figures. The data collection was increasing day to day and they needed to be stored in a device or a software which is safer.
-    <span class="dots">...</span>
-    <span class="more" style="display: none;">
-      Charles Bachman was the first person to develop the Integrated Data Store (IDS) which was based on network data model for which he was inaugurated with the Turing Award (The most prestigious award which is equivalent to Nobel prize in the field of Computer Science.). It was developed in early 1960’s.
+    <!--module1-->
 
-      In the late 1960’s, IBM (International Business Machines Corporation) developed the Integrated Management Systems which is the standard database system used till date in many places. It was developed based on the hierarchical database model. It was during the year 1970 that the relational database model was developed by Edgar Codd. Many of the database models we use today are relational based. It was considered the standardized database model from then.
-      
-      The relational model was still in use by many people in the market.Later during the same decade (1980’s), IBM developed the Structured Query Language (SQL) as a part of R project. It was declared as a standard language for the queries by ISO and ANSI. The Transaction Management Systems for processing transactions was also developed by James Gray for which he was felicitated the Turing Award.
-      
-      Further, there were many other models with rich features like complex queries, datatypes to insert images and many others. The Internet Age has perhaps influenced the data models much more. Data models were developed using object oriented programming features, embedding with scripting languages like Hyper Text Markup Language (HTML) for queries. With humongous data being available online, DBMS is gaining more significance day by day.
-   <a href="https://www.geeksforgeeks.org/history-of-dbms/#:~:text=Many%20of%20the%20database%20models,a%20part%20of%20R%20project.">For more info click here..</a>
-    </span>
-    <button onclick="readMore('buda')" class="myBtn more-button">Read more</button>
-  </p>
-  <hr style="height:2px;border-width:0;color:black;background-color:black;width: 90%;">
-</div>
+    <div class="card contents" data-city="buda">
+      <h2><i class="fa fa-bookmark-o" style="font-size:36px"></i> Module 1</h2>
+      <p>Last Updated : 24 Oct 2020</p>
+      <p><b class="red">HISTORY of DBMS </b></p>
+      <p>
+        Data is a collection of facts and figures. The data collection was increasing day to day and they needed to be
+        stored in a device or a software which is safer.
+        <span class="dots">...</span>
+        <span class="more" style="display: none;">
+          Charles Bachman was the first person to develop the Integrated Data Store (IDS) which was based on network
+          data model for which he was inaugurated with the Turing Award (The most prestigious award which is equivalent
+          to Nobel prize in the field of Computer Science.). It was developed in early 1960’s.
 
-<!-- module1end end -->
+          In the late 1960’s, IBM (International Business Machines Corporation) developed the Integrated Management
+          Systems which is the standard database system used till date in many places. It was developed based on the
+          hierarchical database model. It was during the year 1970 that the relational database model was developed by
+          Edgar Codd. Many of the database models we use today are relational based. It was considered the standardized
+          database model from then.
+
+          The relational model was still in use by many people in the market.Later during the same decade (1980’s), IBM
+          developed the Structured Query Language (SQL) as a part of R project. It was declared as a standard language
+          for the queries by ISO and ANSI. The Transaction Management Systems for processing transactions was also
+          developed by James Gray for which he was felicitated the Turing Award.
+
+          Further, there were many other models with rich features like complex queries, datatypes to insert images and
+          many others. The Internet Age has perhaps influenced the data models much more. Data models were developed
+          using object oriented programming features, embedding with scripting languages like Hyper Text Markup Language
+          (HTML) for queries. With humongous data being available online, DBMS is gaining more significance day by day.
+
+
+          <br>
+          <b>Database </b> is a collection of related data and data is a collection of facts and figures that can be
+          processed
+          to produce information.
+          <br>
+          Mostly data represents recordable facts. Data aids in producing information, which is based on facts. For
+          example, if we have data about marks obtained by all students, we can then conclude about toppers and average
+          marks.
+          <br>
+          <b>A Database Management </b> system stores data in such a way that it becomes easier to retrieve, manipulate,
+          and
+          produce information.
+          <br><br>
+
+          <b class="red"> CHARACTERISTICS</b><br><br>
+          Traditionally, data was organized in file formats. DBMS was a new concept then, and all the research was done
+          to make it overcome the deficiencies in traditional style of data management. A modern DBMS has the following
+          characteristics <br><br>
+
+          <b>0. Real-world entity</b><br>  A modern DBMS is more realistic and uses real-world entities to design its architecture.
+          It uses the behavior and attributes too. For example, a school database may use students as an entity and
+          their age as an attribute.<br>
+
+          <b>1. Relation-based tables</b>><br>  DBMS allows entities and relations among them to form tables. A user can understand
+          the architecture of a database just by looking at the table names.<br>
+
+          <b>2.Isolation of data and application</b><br>  A database system is entirely different than its data. A database is an
+          active entity, whereas data is said to be passive, on which the database works and organizes. DBMS also stores
+          metadata, which is data about data, to ease its own process.<br>
+
+          <b>3.Less redundancy</b><br>  DBMS follows the rules of normalization, which splits a relation when any of its attributes
+          is having redundancy in values. Normalization is a mathematically rich and scientific process that reduces
+          data redundancy.<br>
+
+          <b>4.Consistency</b> <br> Consistency is a state where every relation in a database remains consistent. There exist
+          methods and techniques, which can detect attempt of leaving database in inconsistent state. A DBMS can provide
+          greater consistency as compared to earlier forms of data storing applications like file-processing systems.<br>
+
+          <b>5.Query Language</b><br>  DBMS is equipped with query language, which makes it more efficient to retrieve and
+          manipulate data. A user can apply as many and as different filtering options as required to retrieve a set of
+          data. Traditionally it was not possible where file-processing system was used.<br>
+
+          <b>6.ACID Properties</b> <br> DBMS follows the concepts of Atomicity, Consistency, Isolation, and Durability (normally
+          shortened as ACID). These concepts are applied on transactions, which manipulate data in a database. ACID
+          properties help the database stay healthy in multi-transactional environments and in case of failure.<br>
+
+          <b>7.Multiuser and Concurrent Access</b><br>  DBMS supports multi-user environment and allows them to access and
+          manipulate data in parallel. Though there are restrictions on transactions when users attempt to handle the
+          same data item, but users are always unaware of them.<br>
+
+          <b>8.Multiple views</b><br>  DBMS offers multiple views for different users. A user who is in the Sales department will
+          have a different view of database than a person working in the Production department. This feature enables the
+          users to have a concentrate view of the database according to their requirements.<br>
+
+          <b>9.Security</b><br>  Features like multiple views offer security to some extent where users are unable to access data of
+          other users and departments. DBMS offers methods to impose constraints while entering data into the database
+          and retrieving the same at a later stage. DBMS offers many different levels of security features, which
+          enables multiple users to have different views with different features. For example, a user in the Sales
+          department cannot see the data that belongs to the Purchase department. Additionally, it can also be managed
+          how much data of the Sales department should be displayed to the user. Since a DBMS is not saved on the disk
+          as traditional file systems, it is very hard for miscreants to break the code.<br>
+
+          <br>
+          <a
+            href="https://www.geeksforgeeks.org/history-of-dbms/#:~:text=Many%20of%20the%20database%20models,a%20part%20of%20R%20project.">Geeksforgeks..</a><br>
+          <a href="https://www.tutorialspoint.com/dbms/dbms_overview.htm">Tutorialspoint..</a><br>
+        </span>
+        <button onclick="readMore('buda')" class="myBtn more-button">Read more</button>
+      </p>
+      <hr style="height:2px;border-width:0;color:black;background-color:black;width: 90%;">
+    </div>
+
+    <!-- module1end end -->
     <!--.....................................................................................................-->
   </div>
 
